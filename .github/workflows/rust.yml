@@ -23,6 +23,7 @@ jobs:
       - name: Build on Windows
         run: cargo build --verbose
       - uses: actions/upload-artifact@v4.6.0
+      - name: build artifact
       - with:
           path: .
           
