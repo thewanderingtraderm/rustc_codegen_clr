@@ -22,9 +22,9 @@ jobs:
       - uses: actions/checkout@v3
       - name: Build on Windows
         run: cargo build --verbose
-      - uses: actions/upload-artifact@v4.6.0
       - name: build artifact
-      - with:
+        uses: actions/upload-artifact@v4.6.0
+        with:
           path: .
           
   linux_test:
